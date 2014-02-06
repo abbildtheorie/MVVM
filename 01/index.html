@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <h1>{{title | uppercase}}</h1>
+      <ul>
+        <li
+          v-repeat="todos"
+          v-on="click: done = !done"
+          class="{{done ? 'done' : ''}}"
+        >
+        {{content}}
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
