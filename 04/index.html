@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div>
+      <ul id="demo">
+        <li v-repeat="items" class="item-{{$index}}">
+          {{$index}} - {{parentMsg}} {{childMsg}}
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+

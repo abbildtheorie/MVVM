@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="demo">
+      <p v-component="user-profile" v-with="user"></p>
+    </div>
+    <ul id="demo-2">
+      <li v-repeat="users" v-component="user-profile">
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="../bower_components/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+  <form id="demo">
+    <p><input type="text" v-model="msg">{{ msg }}</p>
+    <p><input type="checkbox" v-model="checked">{{ checked ? "yes" : "no" }}</p>
+    <p>
+      <input type="radio" name="picked" value="one" v-model="picked">
+      <input type="radio" name="picked" value="two" v-model="picked">
+      {{ picked }}
+    </p>
+    <p>
+      <select v-model="selected">
+        <option>one</option>
+        <option>two</option>
+      </select>
+      {{ selected }}
+    </p>
+  </form>
+  </body>
+</html>
